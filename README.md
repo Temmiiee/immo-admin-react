@@ -16,7 +16,7 @@ Assurez-vous d'avoir installé [Docker](https://www.docker.com/) sur votre machi
 
 1. Clonez le dépôt :
    ```bash
-   git clone https://github.com/votre-utilisateur/immo-admin-react.git
+   git clone https://github.com/Temmiiee/immo-admin-react
    
 2. Accédez au répertoire du projet :
    ```bash
