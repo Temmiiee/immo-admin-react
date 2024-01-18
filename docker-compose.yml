@@ -8,8 +8,8 @@ services:
       - ../immo-admin-react:/var/www
     working_dir: /var/www
     command: sh -c "npm install && npx vite dev"
-    environment:
-      - NODE_ENV=development
+    env_file:
+      - .env
     networks:
       - immo.net
 
