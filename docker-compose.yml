@@ -1,0 +1,18 @@
+version: '3'
+services:
+  immo-admin-react:
+    image: node:latest
+    ports:
+      - '3000:3000'
+    volumes:
+      - ../immo-admin-react:/var/www
+    working_dir: /var/www
+    command: sh -c "npm install && npx vite dev"
+    environment:
+      - NODE_ENV=development
+    networks:
+      - immo.net
+
+networks:
+  immo.net:
+    driver: bridge
